@@ -1,0 +1,28 @@
+#cat personalities will be orange, black, white, gray, tabby, calico, tuxedo
+
+def orange_cat_result():
+  print("Congrats! You have an orange cat purrsonality. 
+  There are only 2 types of orange cats: 
+  a sweet wittle baby OR a chaotic monster with one braincell. 
+  Which one are you?")
+
+def black_cat_result():
+  print("Congrats! You have a black cat purrsonality. Black cats are known to be ")
+
+def white_cat_result():
+  print("Congrats! You have a white cat purrsonality.")
+
+def gray_cat_result():
+  print("Congrats! You have a gray cat purrsonality.")
+
+def tabby_cat_result():
+  print("Congrats! You have a tabby cat purrsonality.")
+
+def calico_cat_result():
+  print("Congrats! You have a calico cat purrsonality.")
+
+def tuxedo_cat_result():
+  print("Congrats! You have a tuxedo cat purrsonality.")
+
+def tortoiseshell_cat_result():
+  print("Congrats! You have a tortoiseshell cat purrsonality.")
