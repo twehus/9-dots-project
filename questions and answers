@@ -1,0 +1,46 @@
+#questions for first round - conflict, meeting people, party, fave music, fave food, 
+
+Q1 = "How do you react when meeting someone new?"
+Q2 = "What music genre would you most likely listen to?"
+Q3 = "Choose one that you think would be cool to do."
+Q4 = "Pick a color."
+Q5 = "What's your favorite animal?"
+
+#
+
+#answers to choose from
+
+#"How do you react when meeting someone new?"
+Q1A = "I want to be their friend immediately."
+Q1B = "I try to make small talk."
+Q1C = "I'm pretty neutral about it."
+Q1D = "I briefly introduce myself before finding someone I know to talk to."
+Q1E = "I run awayyyyyyy."
+
+#What type of music do you listen to?
+Q2A = "Country"
+Q2B = "Pop"
+Q2C = "Rock/Alternative"
+Q2D = "Classical"
+Q2E = "R&B"
+Q2F = "Rap/Hip-Hop"
+
+#Choose one that you think would be cool to do.
+Q3A = "Swim with sharks."
+Q3B = "Be a part of a professional sports team."
+Q3C = "Discover a new species."
+Q3D = "Create an original art piece."
+Q3E = "None. I'd rather stay home."
+
+Q4A = "Red"
+Q4B = "Blue"
+Q4C = "Green"
+Q4D = "Yellow"
+Q4E = "Purple"
+
+#"What's your favorite animal?"
+Q5A = "Cat"
+Q5B = "Dog (jk I meant to say cat)"
+Q5C = "Bird (but really a cat)"
+Q5D = "Hamster (aka cat!!)"
+Q5E = "Snake (snakes are basically cats bc they hiss too)"
