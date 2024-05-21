@@ -1,4 +1,4 @@
-#cat personalities will be orange, black, white, gray, tabby, calico, tuxedo
+#cat personalities will be orange, black, white, gray, tabby, calico, tuxedo, tortoiseshell
 
 def orange_cat_result():
   print("Congrats! You have an orange cat purrsonality. 
