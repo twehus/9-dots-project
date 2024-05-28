@@ -3,20 +3,21 @@
 def orange_cat_result():
   print("Congrats! You have an orange cat purrsonality. 
   There are only 2 types of orange cats: 
-  a sweet wittle baby OR a chaotic monster with one braincell.")
+  a sweet wittle baby OR a chaotic monster with a single braincell.
+  Fun fact: Gabby's orange cat is the latter :)")
 
 def black_cat_result():
   print("Congrats! You have a black cat purrsonality. 
-  Black cats are known to be very smart and reserved.
+  Black cats are known to be intelligent, reserved and independent.
   Fun fact: Black cats are more resistant to diseases that other colored cats.")
 
 def tabby_cat_result():
   print("Congrats! You have a tabby cat purrsonality. 
-  Tabby cats are known to be outgoing and sociable.")
+  Tabby cats are known to be outgoing, sociable and playful.")
 
 def calico_cat_result():
   print("Congrats! You have a calico cat purrsonality.
-  Calicos are known to be assertive and determined.
+  Calicos are known to be strong-willed and sassy.
   Fun fact: Calico cats are almost always female.")
 
 def tuxedo_cat_result():
