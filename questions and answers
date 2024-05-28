@@ -4,6 +4,15 @@
 
 #questions (orange +1, tabby +2, calico +3, tuxedo +4, black +5)
 
+questions = [
+    ("How do you react when meeting someone new?"),
+    ("What music genre would you most likely listen to?"),
+    ("Choose one that you think would be cool to do."),
+    ("Pick a color."),
+    ("What's your favorite animal?")
+]
+
+
 Q1 = "How do you react when meeting someone new?"
 Q2 = "What music genre would you most likely listen to?"
 Q3 = "Choose one that you think would be cool to do."
