@@ -1,72 +1,73 @@
+#greeting and welcome
 name = input("What's your name? ")
 print("Hi " + name + "!")
-
 greeting = [
     ("Welcome to the cat purrsonality quiz!"),
-    ("In this quiz, you'll keep track of the amount of points you receive in each round."), 
+    ("In this quiz, make sure to keep track of the points you receive in each round."), 
     ("At the end, your total points will allow you to get your cat purrsonality."), 
-    ("So, make sure to keep count! Have fun!")
+    ("Have fun! "), 
+    ("=^._.^= ∫")
 ]
 welcome = greeting[0]
 print(welcome)
+next = input("")
 welcome2 = greeting[1]
 print(welcome2)
+
+next = input("")
 welcome3 = greeting[2]
 print(welcome3)
+next = input("")
 welcome4 = greeting[3]
 print(welcome4)
+welcome5 = greeting[4]
+print(welcome5)
+next = input("")
 
+#first question
+print("Now for the first question:")
 
+#questions for users
+questions = [
+    ("How do you react when meeting someone new?"),
+    ("What music genre would you most likely listen to?"),
+    ("Choose one that you think would be cool to do."),
+    ("Pick a color."),
+    ("What's your favorite animal?")
+]
+question1 = questions[0]
+print(question1)
 
+answers_for_q1 = [
+("A) I want to be their friend immediately."),
+("B) I make an effort to engage with them."),
+("C) I'm pretty neutral about it."),
+("D) I briefly introduce myself before finding someone I know to talk to."),
+("E) I run awayyyyyyy.")
+]
+answer1 = answers_for_q1[0]
+print(answer1)
+answer2 = answers_for_q1[1]
+print(answer2)
+answer3 = answers_for_q1[2]
+print(answer3)
+answer4 = answers_for_q1[3]
+print(answer4)
+answer5 = answers_for_q1[4]
+print(answer5)
 
+user_answer1 = input("Please type 1 capital letter to select your answer: A, B, C, D, or E.")
+print("You chose letter " + user_answer1 + ".")
 
-
-#Total of 25 points
-#orange: 1-5   tabby: 6-10  calico: 11-15  tuxedo: 16-19   black: 20-25
-
-#questions (orange +1, tabby +2, calico +3, tuxedo +4, black +5)
-
-Q1 = "How do you react when meeting someone new?"
-Q2 = "What music genre would you most likely listen to?"
-Q3 = "Choose one that you think would be cool to do."
-Q4 = "Pick a color."
-Q5 = "What's your favorite animal?"
-
-#answers to choose from
-
-#"How do you react when meeting someone new?"
-Q1A = "1. I want to be their friend immediately." +2
-Q1B = "2. I make an effort to engage with them." +1
-Q1C = "3. I'm pretty neutral about it." +4
-Q1D = "4. I briefly introduce myself before finding someone I know to talk to." +3
-Q1E = "5. I run awayyyyyyy." +5
-
-#What type of music do you listen to?
-Q2A = "Country" +0
-Q2B = "Pop" +2
-Q2C = "Rock/Alternative" +3
-Q2D = "Classical" +4
-Q2E = "R&B" +5
-Q2F = "Rap/Hip-Hop" +1
-
-#Choose one that you think would be cool to do.
-Q3A = "Explore an abandoned forest." +5
-Q3B = "Be a part of a professional sports team." +4
-Q3C = "Discover a new species." +3
-Q3D = "Create an original art piece." +2
-Q3E = "Swim with sharks." +1
-
-#"What's your favorite color?"
-Q4A = "Red" +4
-Q4B = "Orange" +2
-Q4C = "Yellow" +1
-Q4D = "Green" +0
-Q4E = "Blue" +3
-Q4F = "Purple" +5
-
-#"What's your favorite animal?"
-Q5A = "Cat" +1
-Q5B = "Dog (jk I meant to say cat)" +2
-Q5C = "Bird (but really a cat)" +3
-Q5D = "Hamster (aka cat!!)" +4
-Q5E = "Snake (snakes are basically cats bc they hiss too)" +5
+if user_answer1 == "A":
+    print("You get 2 points")
+if user_answer1 == "B":
+    print("You get 1 point")
+if user_answer1 == "C":
+    print("You get 4 points")
+if user_answer1 == "D":
+    print("You get 3 points")
+if user_answer1 == "E":
+    print("You get 5 points")
+    
+next = input()
