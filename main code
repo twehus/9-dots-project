@@ -1,18 +1,20 @@
-print("Welcome to the cat purrsonality quiz! In this quiz, you'll add up the total amount of points you receive from each round. The point total will allow you to get your cat purrsonality at the end. So, make sure to keep count! Have fun!")
+name = input("What's your name? ")
+print("Hi " + name + "!")
 
-Q1 = "How do you react when meeting someone new?"
-print("Here's your first question: " + Q1)
-
-Q1A = "A) I want to be their friend immediately." 
-Q1B = "B) I make an effort to engage with them." 
-Q1C = "C) I'm pretty neutral about it." 
-Q1D = "D) I briefly introduce myself before finding someone I know to talk to."
-Q1E = "E) I run awayyyyyyy."
-print(Q1A)
-print(Q1B)
-print(Q1C)
-print(Q1D)
-print(Q1E)
+greeting = [
+    ("Welcome to the cat purrsonality quiz!"),
+    ("In this quiz, you'll keep track of the amount of points you receive in each round."), 
+    ("At the end, your total points will allow you to get your cat purrsonality."), 
+    ("So, make sure to keep count! Have fun!")
+]
+welcome = greeting[0]
+print(welcome)
+welcome2 = greeting[1]
+print(welcome2)
+welcome3 = greeting[2]
+print(welcome3)
+welcome4 = greeting[3]
+print(welcome4)
 
 
 
