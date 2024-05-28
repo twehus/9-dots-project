@@ -1,4 +1,4 @@
-#cat personalities will be orange, black, white, gray, tabby, calico, tuxedo, tortoiseshell
+#cat personalities will be orange, black, tabby, calico, tuxedo
 
 def orange_cat_result():
   print("Congrats! You have an orange cat purrsonality. 
@@ -9,15 +9,6 @@ def black_cat_result():
   print("Congrats! You have a black cat purrsonality. 
   Black cats are known to be very smart and reserved.
   Fun fact: Black cats are more resistant to diseases that other colored cats.")
-
-def white_cat_result():
-  print("Congrats! You have a white cat purrsonality. 
-  White cats have a tendency to cling to their owners.
-  This is due to their predispositon to being blind or deaf.")
-
-def gray_cat_result():
-  print("Congrats! You have a gray cat purrsonality. 
-  Gray cats are known to be chill and fun-loving.")
 
 def tabby_cat_result():
   print("Congrats! You have a tabby cat purrsonality. 
@@ -33,7 +24,3 @@ def tuxedo_cat_result():
   Tuxedo cats are known to have ever changing personalities. 
   They're very dramatic, very crazy, but they're also crazy about their humans.")
 
-def tortoiseshell_cat_result():
-  print("Congrats! You have a tortoiseshell cat purrsonality.
-  Torties are known for their 'tortitude'.
-  Fun fact: Only 1 in 3000 tortoiseshell cats are male.")
