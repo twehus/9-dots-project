@@ -1,0 +1,70 @@
+print("Welcome to the cat purrsonality quiz! In this quiz, you'll add up the total amount of points you receive from each round. The point total will allow you to get your cat purrsonality at the end. So, make sure to keep count! Have fun!")
+
+Q1 = "How do you react when meeting someone new?"
+print("Here's your first question: " + Q1)
+
+Q1A = "A) I want to be their friend immediately." 
+Q1B = "B) I make an effort to engage with them." 
+Q1C = "C) I'm pretty neutral about it." 
+Q1D = "D) I briefly introduce myself before finding someone I know to talk to."
+Q1E = "E) I run awayyyyyyy."
+print(Q1A)
+print(Q1B)
+print(Q1C)
+print(Q1D)
+print(Q1E)
+
+
+
+
+
+
+#Total of 25 points
+#orange: 1-5   tabby: 6-10  calico: 11-15  tuxedo: 16-19   black: 20-25
+
+#questions (orange +1, tabby +2, calico +3, tuxedo +4, black +5)
+
+Q1 = "How do you react when meeting someone new?"
+Q2 = "What music genre would you most likely listen to?"
+Q3 = "Choose one that you think would be cool to do."
+Q4 = "Pick a color."
+Q5 = "What's your favorite animal?"
+
+#answers to choose from
+
+#"How do you react when meeting someone new?"
+Q1A = "1. I want to be their friend immediately." +2
+Q1B = "2. I make an effort to engage with them." +1
+Q1C = "3. I'm pretty neutral about it." +4
+Q1D = "4. I briefly introduce myself before finding someone I know to talk to." +3
+Q1E = "5. I run awayyyyyyy." +5
+
+#What type of music do you listen to?
+Q2A = "Country" +0
+Q2B = "Pop" +2
+Q2C = "Rock/Alternative" +3
+Q2D = "Classical" +4
+Q2E = "R&B" +5
+Q2F = "Rap/Hip-Hop" +1
+
+#Choose one that you think would be cool to do.
+Q3A = "Explore an abandoned forest." +5
+Q3B = "Be a part of a professional sports team." +4
+Q3C = "Discover a new species." +3
+Q3D = "Create an original art piece." +2
+Q3E = "Swim with sharks." +1
+
+#"What's your favorite color?"
+Q4A = "Red" +4
+Q4B = "Orange" +2
+Q4C = "Yellow" +1
+Q4D = "Green" +0
+Q4E = "Blue" +3
+Q4F = "Purple" +5
+
+#"What's your favorite animal?"
+Q5A = "Cat" +1
+Q5B = "Dog (jk I meant to say cat)" +2
+Q5C = "Bird (but really a cat)" +3
+Q5D = "Hamster (aka cat!!)" +4
+Q5E = "Snake (snakes are basically cats bc they hiss too)" +5
