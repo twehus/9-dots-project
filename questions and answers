@@ -1,4 +1,7 @@
-#questions for first round - conflict, meeting people, party, fave music, fave food, 
+#questions (orange +1, tabby +2, calico +3, tuxedo +4, black +5)
+#Total of 25 points
+#orange: 1-5   tabby: 6-10  calico: 11-15  tuxedo: 16-19   black: 20-25
+
 
 Q1 = "How do you react when meeting someone new?"
 Q2 = "What music genre would you most likely listen to?"
@@ -11,35 +14,37 @@ Q5 = "What's your favorite animal?"
 #answers to choose from
 
 #"How do you react when meeting someone new?"
-Q1A = "1. I want to be their friend immediately."
-Q1B = "2. I try to make small talk."
-Q1C = "3. I'm pretty neutral about it."
-Q1D = "4. I briefly introduce myself before finding someone I know to talk to."
-Q1E = "5. I run awayyyyyyy."
+Q1A = "1. I want to be their friend immediately." +2
+Q1B = "2. I make an effort to engage with them." +1
+Q1C = "3. I'm pretty neutral about it." +4
+Q1D = "4. I briefly introduce myself before finding someone I know to talk to." +3
+Q1E = "5. I run awayyyyyyy." +5
 
 #What type of music do you listen to?
-Q2A = "Country"
-Q2B = "Pop"
-Q2C = "Rock/Alternative"
-Q2D = "Classical"
-Q2E = "R&B"
+Q2A = "Country" +0
+Q2B = "Pop" +2
+Q2C = "Rock/Alternative" +3
+Q2D = "Classical" +4
+Q2E = "R&B" +5
+Q2F = "Rap/Hip-Hop" +1
 
 #Choose one that you think would be cool to do.
-Q3A = "Swim with sharks."
-Q3B = "Be a part of a professional sports team."
-Q3C = "Discover a new species."
-Q3D = "Create an original art piece."
-Q3E = "None. I'd rather stay home."
+Q3A = "Explore an abandoned forest." +5
+Q3B = "Be a part of a professional sports team." +4
+Q3C = "Discover a new species." +3
+Q3D = "Create an original art piece." +2
+Q3E = "Swim with sharks." +1
 
-Q4A = "Red"
-Q4B = "Blue"
-Q4C = "Green"
-Q4D = "Yellow"
-Q4E = "Purple"
+Q4A = "Red" +4
+Q4B = "Orange" +2
+Q4C = "Yellow" +1
+Q4D = "Green" +0
+Q4E = "Blue" +3
+Q4F = "Purple" +5
 
 #"What's your favorite animal?"
-Q5A = "Cat"
-Q5B = "Dog (jk I meant to say cat)"
-Q5C = "Bird (but really a cat)"
-Q5D = "Hamster (aka cat!!)"
-Q5E = "Snake (snakes are basically cats bc they hiss too)"
+Q5A = "Cat" +1
+Q5B = "Dog (jk I meant to say cat)" +2
+Q5C = "Bird (but really a cat)" +3
+Q5D = "Hamster (aka cat!!)" +4
+Q5E = "Snake (snakes are basically cats bc they hiss too)" +5
