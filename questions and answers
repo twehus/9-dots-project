@@ -11,11 +11,11 @@ Q5 = "What's your favorite animal?"
 #answers to choose from
 
 #"How do you react when meeting someone new?"
-Q1A = "I want to be their friend immediately."
-Q1B = "I try to make small talk."
-Q1C = "I'm pretty neutral about it."
-Q1D = "I briefly introduce myself before finding someone I know to talk to."
-Q1E = "I run awayyyyyyy."
+Q1A = "1. I want to be their friend immediately."
+Q1B = "2. I try to make small talk."
+Q1C = "3. I'm pretty neutral about it."
+Q1D = "4. I briefly introduce myself before finding someone I know to talk to."
+Q1E = "5. I run awayyyyyyy."
 
 #What type of music do you listen to?
 Q2A = "Country"
