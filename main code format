@@ -1,7 +1,7 @@
 #greeting and welcome
 greeting = [
     ("Welcome to the Cat Purrsonality Quiz!"),
-    ("In this quiz, make sure to keep track of the points you receive in each round."), 
+    ("In this quiz, keep track of the points you receive in each round."), 
     ("At the end, you'll add them up to discover your cat purrsonality.\n"), 
     ("Have fun!"), 
     ("=^._.^= ∫\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
