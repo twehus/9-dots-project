@@ -319,4 +319,4 @@ else:
     
 input()
 
-print("Thanks for taking my quiz! Have a wonderful rest of your day! :)\nᶠᵉᵉᵈ ᵐᵉ /ᐠ-ⱉ-ᐟ\ﾉ\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
+print("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n\nThanks for taking my quiz! Have a wonderful rest of your day! :)\nᶠᵉᵉᵈ ᵐᵉ /ᐠ-ⱉ-ᐟ\ﾉ\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
