@@ -1,6 +1,6 @@
 #greeting and welcome
 greeting = [
-    ("Welcome to the cat purrsonality quiz!"),
+    ("Welcome to the Cat Purrsonality Quiz!"),
     ("In this quiz, make sure to keep track of the points you receive in each round."), 
     ("At the end, you'll add them up to discover your cat purrsonality.\n"), 
     ("Have fun!"), 
@@ -26,7 +26,7 @@ input()
 
 
 #first question
-print("Now for the first question:")
+print("Your first question is:")
 input()
 #questions for users
 questions = [
@@ -58,8 +58,8 @@ print(answer4)
 answer5 = answers_for_q1[4]
 print(answer5)
 
-user_answer1 = input("Please type 1 capital letter to select your answer: A, B, C, D, or E.")
-print("You chose letter " + user_answer1 + ".\n")
+user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D, or E.\n")
+print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
     print("You get 2 points.")
@@ -74,6 +74,8 @@ elif user_answer1 == "E":
 else:
     print("Error. Must select a letter given.")
 
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
+
 
 
 input()
@@ -81,7 +83,7 @@ input()
 
 
 #question for 2
-print("Okay, " + name + " let's jump to the next question:")
+print("Okay, " + name + " let's go to the next question:")
 next = input()
 question2 = questions[1]
 print(question2)
@@ -109,7 +111,7 @@ print(answer5)
 answer6 = answers_for_q2[5]
 print(answer6)
 
-user_answer1 = input("Please type 1 capital letter to select your answer: A, B, C, D, E or F.")
+user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D, E or F.\n")
 print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
@@ -127,14 +129,16 @@ elif user_answer1 == "F":
 else:
     print("Error. Must select a letter given.")
 
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
 
-next = input()
+
+input()
 
 
 
 #question for 3
-print("Moving on to question 3!")
+print("Now for question 3!")
 next = input()
 question3 = questions[2]
 print(question3)
@@ -159,7 +163,7 @@ print(answer4)
 answer5 = answers_for_q3[4]
 print(answer5)
 
-user_answer1 = input("Please type 1 capital letter to select your answer: A, B, C, D or E.")
+user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D or E.\n")
 print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
@@ -175,15 +179,17 @@ elif user_answer1 == "E":
 else:
     print("Error. Must select a letter given.")
 
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
 
-next = input()
+
+input()
 
 
 
 #question for 4
-print(name + ", you're almost finished with the quiz!" + " Here's number 4:")
-next = input()
+print(name + ", you've made it to question 4!")
+input()
 question4 = questions[3]
 print(question4)
 
@@ -210,7 +216,7 @@ print(answer5)
 answer6 = answers_for_q4[5]
 print(answer6)
 
-user_answer1 = input("Please type 1 capital letter to select your answer: A, B, C, D, E or F.")
+user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D, E or F.\n")
 print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
@@ -228,13 +234,17 @@ elif user_answer1 == "F":
 else:
     print("Error. Must select a letter given.")
 
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
-next = input()
+
+
+input()
+
 
 
 #question 5
-print(name + ", this is the final question!")
-next = input()
+print(name + ", here's the final question!")
+input()
 question5 = questions[4]
 print(question5)
 
@@ -258,7 +268,7 @@ print(answer4)
 answer5 = answers_for_q5[4]
 print(answer5)
 
-user_answer1 = input("Please type 1 capital letter to select your answer: A, B, C, D or E.")
+user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D or E.\n")
 print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
@@ -274,16 +284,18 @@ elif user_answer1 == "E":
 else:
     print("Error. Must select a letter given.")
 
-
-
-next = input()
+print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
 
 
-print("* Congrats! *\nYou answered all of the questions!\nNow it's time to tally up your points!")
 input()
-total_points = int(input("Please type your number of points you have below."))
-print("It's time to find out your cat purrsonality!")
+
+
+
+print("* Nice job, " + name + "! *\nYou answered all of the questions!\nNow it's time to tally up your points!")
+input()
+total_points = int(input("Please type the total number of points you have below."))
+print("\nAnd your results are......\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
 input()
 
 orange_cat_result = "Congrats! You have an orange cat purrsonality.\nThere are only 2 types of orange cats:\nA sweet wittle baby OR a chaotic monster with a single braincell.\nFun fact: Gabby's orange cat is the latter :)"
@@ -304,3 +316,7 @@ elif total_points <= 25:
     print(black_cat_result)
 else:
     print("Error. Total number cannot be greater than 25.")
+    
+input()
+
+print("Thanks for taking my quiz! Have a wonderful rest of your day! :)")
