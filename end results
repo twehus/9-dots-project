@@ -1,0 +1,22 @@
+print("* Congrats! *\nYou answered all of the questions!\nNow it's time to tally up your points!")
+input()
+total_points = input("Please type your number of points you have below.")
+
+print("You had " + total_points+ " points!")
+input()
+print("With " + total_points + " points, you can now get your cat purrsonality result!")
+input()
+print("Which is......")
+
+if total_points < 6:
+    print('Hello Fred')
+elif total_points < 11:
+    print('Hello Xander')
+elif total_points < 16:
+    print('Hello Joe')
+elif total_points < 20:
+    print('Hello Arnold')
+elif total_points >= 20:
+    print('Hello Arnold')
+else:
+    print("Error. Total number cannot be less than 3 or greater than 25.")
