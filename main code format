@@ -63,14 +63,16 @@ print("You chose letter " + user_answer1 + ".\n")
 
 if user_answer1 == "A":
     print("You get 2 points.")
-if user_answer1 == "B":
+elif user_answer1 == "B":
     print("You get 1 point.")
-if user_answer1 == "C":
+elif user_answer1 == "C":
     print("You get 4 points.")
-if user_answer1 == "D":
+elif user_answer1 == "D":
     print("You get 3 points.")
-if user_answer1 == "E":
+elif user_answer1 == "E":
     print("You get 5 points.")
+else:
+    print("Error. Must select a letter given.")
 
 
 
@@ -112,16 +114,18 @@ print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
     print("You get 0 points.")
-if user_answer1 == "B":
+elif user_answer1 == "B":
     print("You get 2 points.")
-if user_answer1 == "C":
+elif user_answer1 == "C":
     print("You get 3 points.")
-if user_answer1 == "D":
+elif user_answer1 == "D":
     print("You get 4 points.")
-if user_answer1 == "E":
+elif user_answer1 == "E":
     print("You get 5 points.")
-if user_answer1 == "F":
+elif user_answer1 == "F":
     print("You get 1 point.")
+else:
+    print("Error. Must select a letter given.")
 
 
 
@@ -160,14 +164,16 @@ print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
     print("You get 5 points.")
-if user_answer1 == "B":
+elif user_answer1 == "B":
     print("You get 4 points.")
-if user_answer1 == "C":
+elif user_answer1 == "C":
     print("You get 3 points.")
-if user_answer1 == "D":
+elif user_answer1 == "D":
     print("You get 2 points.")
-if user_answer1 == "E":
+elif user_answer1 == "E":
     print("You get 1 point.")
+else:
+    print("Error. Must select a letter given.")
 
 
 
@@ -209,16 +215,18 @@ print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
     print("You get 4 points.")
-if user_answer1 == "B":
+elif user_answer1 == "B":
     print("You get 2 points.")
-if user_answer1 == "C":
+elif user_answer1 == "C":
     print("You get 1 point.")
-if user_answer1 == "D":
+elif user_answer1 == "D":
     print("You get 0 points.")
-if user_answer1 == "E":
+elif user_answer1 == "E":
     print("You get 3 points.")
-if user_answer1 == "F":
+elif user_answer1 == "F":
     print("You get 5 points.")
+else:
+    print("Error. Must select a letter given.")
 
 
 next = input()
@@ -255,14 +263,16 @@ print("You chose letter " + user_answer1 + ".")
 
 if user_answer1 == "A":
     print("You get 1 point.")
-if user_answer1 == "B":
+elif user_answer1 == "B":
     print("You get 2 points.")
-if user_answer1 == "C":
+elif user_answer1 == "C":
     print("You get 3 points.")
-if user_answer1 == "D":
+elif user_answer1 == "D":
     print("You get 4 points.")
-if user_answer1 == "E":
+elif user_answer1 == "E":
     print("You get 5 points.")
+else:
+    print("Error. Must select a letter given.")
 
 
 
