@@ -270,3 +270,27 @@ next = input()
 
 
 
+print("* Congrats! *\nYou answered all of the questions!\nNow it's time to tally up your points!")
+input()
+total_points = int(input("Please type your number of points you have below."))
+print("It's time to find out your cat purrsonality!")
+input()
+
+orange_cat_result = "Congrats! You have an orange cat purrsonality.\nThere are only 2 types of orange cats:\nA sweet wittle baby OR a chaotic monster with a single braincell.\nFun fact: Gabby's orange cat is the latter :)"
+black_cat_result = "Congrats! You have a black cat purrsonality.\nBlack cats are known to be intelligent, reserved and independent.\nFun fact: Black cats are more resistant to diseases that other colored cats."
+tabby_cat_result = "Congrats! You have a tabby cat purrsonality.\nTabby cats are known to be outgoing, sociable and playful."
+calico_cat_result = "Congrats! You have a calico cat purrsonality.\nCalicos are known to be strong-willed and sassy.\nFun fact: Calico cats are almost always female."
+tuxedo_cat_result = "Congrats! You have a tuxedo cat purrsonality.\nTuxedo cats are known to have ever changing personalities.\nThey're very dramatic and crazy, but they're also crazy about their humans."
+
+if total_points <= 5:
+    print(orange_cat_result)
+elif total_points <= 10:
+    print(tabby_cat_result)
+elif total_points <= 15:
+    print(calico_cat_result)
+elif total_points <= 19:
+    print(tuxedo_cat_result)
+elif total_points <= 25:
+    print(black_cat_result)
+else:
+    print("Error. Total number cannot be greater than 25.")
