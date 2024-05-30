@@ -272,7 +272,7 @@ input()
 
 print("* Nice job, " + name + "! *\nYou answered all of the questions!\nNow it's time to calculate your points!")
 input()
-total_points = sum(points1, points2, points3, points4, points5)
+total_points = points1 + points2 + points3 + points4 + points5
 print("\nAnd your results are......\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
 input()
 
