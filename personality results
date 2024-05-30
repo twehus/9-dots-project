@@ -1,62 +1,46 @@
 #cat personalities will be orange, black, tabby, calico, tuxedo
 
-def orange_cat_result():
-  print("Congrats! You have an orange cat purrsonality. 
-  There are only 2 types of orange cats: 
-  a sweet wittle baby OR a chaotic monster with a single braincell.
-  Fun fact: Gabby's orange cat is the latter :)")
+orange_cat_result = [
+    "You have an orange cat purrsonality.",
+    "Orange cats are often associated with being outgoing and friendly.",
+    "They can also be energetic, affectionate and adventurous.",
+    "Some orange cats tend to be chaotic monsters with a single braincell.",
+    "Fun fact: Gabby's orange cat is the latter :)",
+    "Fun fact #2: Orange cats are mostly male due to a gene that's related to their fur color."
+]
 
-def black_cat_result():
-  print("Congrats! You have a black cat purrsonality. 
-  Black cats are known to be intelligent, reserved and independent.
-  Fun fact: Black cats are more resistant to diseases that other colored cats.")
+black_cat_result = [
+  "You have a black cat purrsonality.",
+  "Black cats are known to be intelligent, elegant and mysterious.",
+  "They are also independent, loyal and resourceful.",
+  "Fun fact #1: Black cats are more resistant to diseases that other colored cats.",
+  "Fun fact #2: Christianity is to blame for their associations with bad luck and "evil".\nAround the 13th century Christian churches saw witches as a direct competition with them,\nand over time there became a correlation between witches and black cats specifically\n(there's a lot of detailed information out there, and I used a History.com ariticle to find this particular fact)."
+]
 
-def tabby_cat_result():
-  print("Congrats! You have a tabby cat purrsonality. 
-  Tabby cats are known to be outgoing, sociable and playful.")
+tabby_cat_result = [
+  "You have a tabby cat purrsonality.",
+  "Tabby cats are known to be outgoing, sociable and playful.",
+  "They can also be adaptable and affectionate.",
+  "Fun fact #1: The "M" shape on most tabbys' head is said to be the marking of the Egyptian goddess Bastet.",
+  "Fun fact #2: Most cats have the tabby coat pattern (around 60%)."
+]
 
-def calico_cat_result():
-  print("Congrats! You have a calico cat purrsonality.
-  Calicos are known to be strong-willed and sassy.
-  Fun fact: Calico cats are almost always female.")
+calico_cat_result = [
+  "You have a calico cat purrsonality.",
+  "Calicos are known to be strong-willed and sassy.",
+  "They can also be quirky, vocal and unique.",
+  "Fun fact #1: Calico cats are almost always female due to their coat coloration.",
+  "Fun fact #2: Calicos are symbols of good luck in many cultures."
+]
 
-def tuxedo_cat_result():
-  print("Congrats! You have a tuxedo cat purrsonality. 
-  Tuxedo cats are known to have ever changing personalities. 
-  They're very dramatic, very crazy, but they're also crazy about their humans.")
+tuxedo_cat_result = [
+  "You have a tuxedo cat purrsonality.",
+  "Tuxedo cats are known to be dapper and distinguished, with a bit of mischief.",
+  "They can also be charismatic, playful and social.",
+  "Some people say tuxedos are the huskies of cats.", 
+  "Fun fact: Tuxedo cats earned their name because of their distinctive black and white markings."
+]
 
 
-Orange Cats:
-Stereotype: Often associated with being outgoing and friendly.
-Additional Traits:
-Energetic: Orange cats are often portrayed as being playful and full of energy.
-Affectionate: They may be depicted as loving attention and cuddles.
-Adventurous: Known for their curiosity and love of exploration.
 
-Black Cats:
-Stereotype: Sometimes associated with superstitions, but also seen as elegant and mysterious.
-Additional Traits:
-Independent: Black cats may be perceived as having a strong sense of independence.
-Loyal: Once they form a bond, they are fiercely loyal to their humans.
-Intelligent: Often depicted as intelligent and resourceful.
 
-Gray Cats:
-Stereotype: Regal and sophisticated, with a touch of mystery.
-Additional Traits:
-Serene: Gray cats may be seen as calm and composed, even in chaotic situations.
-Observant: Known for their keen senses and ability to observe their surroundings.
-Graceful: Often portrayed as moving with elegance and poise.
-
-Tuxedo Cats:
-Stereotype: Dapper and distinguished, with a touch of mischief.
-Additional Traits:
-Charismatic: Tuxedo cats may have a charming and magnetic personality.
-Playful: Known for their playful antics and love of games.
-Social: They may enjoy the company of both humans and other pets.
-
-Calico Cats:
-Stereotype: Often associated with being unique and sassy.
-Additional Traits:
-Quirky: Calico cats may have quirky and endearing personality traits.
-Vocal: Known for their expressive meows and communication skills.
-Independent Thinkers: They may have a strong will and do things their own way.
