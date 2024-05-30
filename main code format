@@ -1,8 +1,8 @@
 #greeting and welcome
 greeting = [
     ("Welcome to the Cat Purrsonality Quiz!"),
-    ("In this quiz, keep track of the points you receive in each round."), 
-    ("At the end, you'll add them up to discover your cat purrsonality.\n"), 
+    ("In this quiz, you'll receive points for the answers you choose."), 
+    ("At the end, they'll be calculated and you'll discover your cat personality.\n"), 
     ("Have fun!"), 
     ("\n=^._.^= ∫\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 ]
@@ -58,21 +58,18 @@ print(answer4)
 answer5 = answers_for_q1[4]
 print(answer5)
 
-user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D, or E.\n")
-print("You chose letter " + user_answer1 + ".")
 
-if user_answer1 == "A":
-    print("You get 2 points.")
-elif user_answer1 == "B":
-    print("You get 1 point.")
-elif user_answer1 == "C":
-    print("You get 4 points.")
-elif user_answer1 == "D":
-    print("You get 3 points.")
-elif user_answer1 == "E":
-    print("You get 5 points.")
-else:
-    print("Error. Must select a letter given.")
+def quiz_question1():
+    answer = input("\nEnter your answer (A-E): \n").upper()  # Converts input to uppercase
+    if answer in ['A', 'B', 'C', 'D', 'E']:
+        points = {'A': 2, 'B': 1, 'C': 4, 'D': 3, 'E': 5}
+        return points[answer]  
+    else:
+        print("Error. Please enter a letter from A to E.")
+        return quiz_question1()
+
+points1 = quiz_question1()
+print("Points earned:", points1)
 
 print("\nᐟᐠ-ꞈ-ᐟᐠ\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
@@ -83,7 +80,7 @@ input()
 
 
 #question for 2
-print("Okay, " + name + " let's go to the next question:")
+print("Okay, " + name + " let's go to question number 2:")
 next = input()
 question2 = questions[1]
 print(question2)
@@ -111,23 +108,17 @@ print(answer5)
 answer6 = answers_for_q2[5]
 print(answer6)
 
-user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D, E or F.\n")
-print("You chose letter " + user_answer1 + ".")
+def quiz_question2():
+    answer = input("\nEnter your answer (A-F): \n").upper()  # Convert input to uppercase
+    if answer in ['A', 'B', 'C', 'D', 'E', 'F']:
+        points = {'A': 0, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 1}
+        return points[answer]  
+    else:
+        print("Error. Please enter a letter from A to F.")
+        return quiz_question2()
 
-if user_answer1 == "A":
-    print("You get 0 points.")
-elif user_answer1 == "B":
-    print("You get 2 points.")
-elif user_answer1 == "C":
-    print("You get 3 points.")
-elif user_answer1 == "D":
-    print("You get 4 points.")
-elif user_answer1 == "E":
-    print("You get 5 points.")
-elif user_answer1 == "F":
-    print("You get 1 point.")
-else:
-    print("Error. Must select a letter given.")
+points2 = quiz_question2()
+print("Points earned:", points2)
 
 print("\n^.ᆽ.^= ∫\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
@@ -163,21 +154,18 @@ print(answer4)
 answer5 = answers_for_q3[4]
 print(answer5)
 
-user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D or E.\n")
-print("You chose letter " + user_answer1 + ".")
 
-if user_answer1 == "A":
-    print("You get 5 points.")
-elif user_answer1 == "B":
-    print("You get 4 points.")
-elif user_answer1 == "C":
-    print("You get 3 points.")
-elif user_answer1 == "D":
-    print("You get 2 points.")
-elif user_answer1 == "E":
-    print("You get 1 point.")
-else:
-    print("Error. Must select a letter given.")
+def quiz_question3():
+    answer = input("\nEnter your answer (A-E): \n").upper()
+    if answer in ['A', 'B', 'C', 'D', 'E']:
+        points = {'A': 5, 'B': 4, 'C': 3, 'D': 2, 'E': 1}
+        return points[answer]  
+    else:
+        print("Error. Please enter a letter from A to E.")
+        return quiz_question3()
+
+points3 = quiz_question3()
+print("Points earned:", points3)
 
 print("\n(˃ᆺ˂)\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
@@ -216,23 +204,17 @@ print(answer5)
 answer6 = answers_for_q4[5]
 print(answer6)
 
-user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D, E or F.\n")
-print("You chose letter " + user_answer1 + ".")
+def quiz_question4():
+    answer = input("\nEnter your answer (A-F): \n").upper()
+    if answer in ['A', 'B', 'C', 'D', 'E', 'F']:
+        points = {'A': 4, 'B': 2, 'C': 1, 'D': 0, 'E': 3, 'F': 5}
+        return points[answer]  
+    else:
+        print("Error. Please enter a letter from A to F.")
+        return quiz_question4()
 
-if user_answer1 == "A":
-    print("You get 4 points.")
-elif user_answer1 == "B":
-    print("You get 2 points.")
-elif user_answer1 == "C":
-    print("You get 1 point.")
-elif user_answer1 == "D":
-    print("You get 0 points.")
-elif user_answer1 == "E":
-    print("You get 3 points.")
-elif user_answer1 == "F":
-    print("You get 5 points.")
-else:
-    print("Error. Must select a letter given.")
+points4 = quiz_question4()
+print("Points earned:", points4)
 
 print("\nᐟᐠ｡ꞈ｡ᐟᐠ\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
@@ -268,21 +250,17 @@ print(answer4)
 answer5 = answers_for_q5[4]
 print(answer5)
 
-user_answer1 = input("\nPlease type 1 capital letter to select your answer: A, B, C, D or E.\n")
-print("You chose letter " + user_answer1 + ".")
+def quiz_question5():
+    answer = input("\nEnter your answer (A-E): \n").upper()
+    if answer in ['A', 'B', 'C', 'D', 'E']:
+        points = {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5}
+        return points[answer]  
+    else:
+        print("Error. Please enter a letter from A to E.")
+        return quiz_question5()
 
-if user_answer1 == "A":
-    print("You get 1 point.")
-elif user_answer1 == "B":
-    print("You get 2 points.")
-elif user_answer1 == "C":
-    print("You get 3 points.")
-elif user_answer1 == "D":
-    print("You get 4 points.")
-elif user_answer1 == "E":
-    print("You get 5 points.")
-else:
-    print("Error. Must select a letter given.")
+points5 = quiz_question5()
+print("Points earned:", points5)
 
 print("\n(=^･ω･^=)\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
@@ -292,9 +270,9 @@ input()
 
 
 
-print("* Nice job, " + name + "! *\nYou answered all of the questions!\nNow it's time to tally up your points!")
+print("* Nice job, " + name + "! *\nYou answered all of the questions!\nNow it's time to calculate your points!")
 input()
-total_points = int(input("Please type the total number of points you have below."))
+total_points = sum(points1, points2, points3, points4, points5)
 print("\nAnd your results are......\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
 input()
 
