@@ -27,3 +27,53 @@ for question, correct_answer in QUESTIONS:
         print("Correct!")
     else:
         print(f"The answer is {correct_answer!r}, not {answer!r}")
+
+#from ChatGPT
+def quiz_question():
+    # Prompt the user for input
+    answer = input("Enter your answer (A-F): ").upper()  # Convert input to uppercase
+
+    # Check if the input is valid
+    if answer in ['A', 'B', 'C', 'D', 'E', 'F']:
+        # Assign points based on the answer
+        points = {'A': 10, 'B': 8, 'C': 6, 'D': 4, 'E': 2, 'F': 0}
+        return points[answer]  # Return the points for the answer
+    else:
+        # Display error message and prompt the user again
+        print("Invalid input. Please enter a letter from A to F.")
+        return quiz_question()  # Call the function recursively to prompt the user again
+
+# Call the function to start the quiz
+points = quiz_question()
+print("Points earned:", points)
+
+
+#tallying up points automatically
+def quiz_question(total_points):
+    # Prompt the user for input
+    answer = input("Enter your answer (A-F): ").upper()  # Convert input to uppercase
+
+    # Check if the input is valid
+    if answer in ['A', 'B', 'C', 'D', 'E', 'F']:
+        # Assign points based on the answer
+        points = {'A': 10, 'B': 8, 'C': 6, 'D': 4, 'E': 2, 'F': 0}
+        earned_points = points[answer]  # Get the points for the answer
+        total_points += earned_points  # Update total points
+        print("Correct! You earned", earned_points, "points.")
+    else:
+        # Display error message and prompt the user again
+        print("Invalid input. Please enter a letter from A to F.")
+
+    return total_points  # Return the updated total points
+
+# Function to run the quiz
+def run_quiz():
+    total_points = 0  # Initialize total points
+    for _ in range(5):  # Assuming there are 5 questions
+        total_points = quiz_question(total_points)  # Call quiz_question and update total points
+
+    print("Quiz completed! Total points earned:", total_points)
+
+# Call the function to start the quiz
+run_quiz()
+
