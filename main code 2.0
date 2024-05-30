@@ -80,7 +80,7 @@ input()
 
 
 #question for 2
-print("Okay, " + name + " let's go to question number 2:")
+print("Okay, " + name + " let's go to question 2:")
 next = input()
 question2 = questions[1]
 print(question2)
@@ -270,10 +270,10 @@ input()
 
 
 
-print("* Nice job, " + name + "! *\nYou answered all of the questions!\nNow it's time to calculate your points!")
+print("* Nice job, " + name + "! *\nYou've completed all of the questions.\nNow it's time to calculate your points.")
 input()
 total_points = points1 + points2 + points3 + points4 + points5
-print("\nAnd your results are......\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
+print("\nYour results are:\n")
 input()
 
 orange_cat_result = ("You have an orange cat purrsonality.\n"
@@ -324,4 +324,9 @@ else:
     
 input()
 
-print("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n\nThanks for taking my quiz! Have a wonderful rest of your day! :)\nᶠᵉᵉᵈ ᵐᵉ /ᐠ-ⱉ-ᐟ\ﾉ\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
+print("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n\nThanks for taking my quiz! Have a wonderful rest of your day! :)\nᶠᵉᵉᵈ ᵐᵉ /ᐠ-ⱉ-ᐟ\ﾉ\n")
+print(
+"\n   /\-/\    /\-/\    /\-/\    /\-/\    /\-/\    /\-/\    /\-/\    /\-/\ \n",
+" (=^Y^=)  (=^Y^=)  (=^Y^=)  (=^Y^=)  (=^Y^=)  (=^Y^=)  (=^Y^=)  (=^Y^=) \n",
+"  (>o<)    (>o<)    (>o<)    (>o<)    (>o<)    (>o<)    (>o<)    (>o<)")
+
