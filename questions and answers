@@ -10,6 +10,8 @@ questions = [
     ("Choose one that you think would be cool to do."),
     ("Pick a color."),
     ("What's your favorite animal?")
+    ("Do you consider yourself organized?")
+    ("Are you more creative or logical?")
 ]
 
 
@@ -18,6 +20,8 @@ Q2 = "What music genre would you most likely listen to?"
 Q3 = "Choose one that you think would be cool to do."
 Q4 = "Pick a color."
 Q5 = "What's your favorite animal?"
+Q6 = "Do you consider yourself organized?"
+Q7 = "Are you more creative or logical?"
 
 #answers to choose from
 
@@ -57,3 +61,18 @@ Q5B = "Dog (jk I meant to say cat)" +2
 Q5C = "Bird (but really a cat)" +3
 Q5D = "Hamster (aka cat!!)" +4
 Q5E = "Snake (snakes are basically cats bc they hiss too)" +5
+
+#"Do you consider yourself organized?"
+Q6A = "I'm the most organized person I know." +5
+Q6B = "Yes!" +3
+Q6C = "At work but not at home." +2
+Q6D = "Only when it really matters." +1
+Q6E = "No lol." +4
+
+
+#"Are you more creative or logical?"
+Q7A = "Creative" +4
+Q7B = "Mostly creative" +1
+Q7C = "An equal mix of both" +2
+Q7D = "Mostly logical" +3
+Q7E = "Logical" +5
