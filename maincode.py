@@ -35,6 +35,8 @@ questions = [
     ("Choose one that you think would be cool to do.\n"),
     ("Pick a color.\n"),
     ("What's your favorite animal?\n")
+    ("Do you consider yourself organized?\n")
+    ("Are you more creative or logical?\n")
 ]
 question1 = questions[0]
 print(question1)
@@ -225,7 +227,7 @@ input()
 
 
 #question 5
-print(name + ", here's the final question!")
+print("Here's question 5:")
 input()
 question5 = questions[4]
 print(question5)
@@ -263,6 +265,98 @@ points5 = quiz_question5()
 print("Points earned:", points5)
 
 print("\n(=^･ω･^=)\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
+
+
+
+input()
+
+
+
+#question 6
+print("Question #6:")
+input()
+question6 = questions[5]
+print(question6)
+
+#answers for question 6
+answers_for_q6 = [
+("A) I'm the most organized person I know."),
+("B) Yes!"),
+("C) At work but not at home."),
+("D) Only when it really matters."),
+("E) No lol.")
+]
+
+answer1 = answers_for_q6[0]
+print(answer1)
+answer2 = answers_for_q6[1]
+print(answer2)
+answer3 = answers_for_q6[2]
+print(answer3)
+answer4 = answers_for_q6[3]
+print(answer4)
+answer5 = answers_for_q6[4]
+print(answer5)
+
+def quiz_question6():
+    answer = input("\nEnter your answer (A-E): \n").upper()
+    if answer in ['A', 'B', 'C', 'D', 'E']:
+        points = {'A': 5, 'B': 3, 'C': 2, 'D': 1, 'E': 4}
+        return points[answer]  
+    else:
+        print("Error. Please enter a letter from A to E.")
+        return quiz_question6()
+
+points6 = quiz_question6()
+print("Points earned:", points6)
+
+print("\n(^≗ω≗^)\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
+
+
+
+input()
+
+
+
+#question 7
+print(name + ", here's the final question!")
+input()
+question7 = questions[6]
+print(question7)
+
+#answers for question 7
+answers_for_q7 = [
+("A) Creative"),
+("B) Mostly creative"),
+("C) An equal mix of both"),
+("D) Mostly logical"),
+("E) Logical")
+]
+
+answer1 = answers_for_q7[0]
+print(answer1)
+answer2 = answers_for_q7[1]
+print(answer2)
+answer3 = answers_for_q7[2]
+print(answer3)
+answer4 = answers_for_q7[3]
+print(answer4)
+answer5 = answers_for_q7[4]
+print(answer5)
+
+def quiz_question7():
+    answer = input("\nEnter your answer (A-E): \n").upper()
+    if answer in ['A', 'B', 'C', 'D', 'E']:
+        points = {'A': 4, 'B': 1, 'C': 2, 'D': 3, 'E': 5}
+        return points[answer]  
+    else:
+        print("Error. Please enter a letter from A to E.")
+        return quiz_question7()
+
+points7 = quiz_question7()
+print("Points earned:", points7)
+
+print("\n(=ಠᆽಠ=)\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
 
 
