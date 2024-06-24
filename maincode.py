@@ -34,8 +34,8 @@ questions = [
     ("What music genre would you most likely listen to?\n"),
     ("Choose one that you think would be cool to do.\n"),
     ("Pick a color.\n"),
-    ("What's your favorite animal?\n")
-    ("Do you consider yourself organized?\n")
+    ("What's your favorite animal?\n"),
+    ("Do you consider yourself organized?\n"),
     ("Are you more creative or logical?\n")
 ]
 question1 = questions[0]
