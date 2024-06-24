@@ -310,7 +310,7 @@ def quiz_question6():
 points6 = quiz_question6()
 print("Points earned:", points6)
 
-print("\n(^≗ω≗^)\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
+print("\n(=◉ᆽ◉=)\n\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ")
 
 
 
