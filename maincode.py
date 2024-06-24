@@ -403,18 +403,18 @@ tuxedo_cat_result = ("You have a tuxedo cat purrsonality.\n"
   "Some people say tuxedos are the huskies of cats.\n" 
   "Fun fact: Tuxedo cats earned their name because of their distinctive black and white markings.")
 
-if total_points <= 5:
+if total_points <= 7:
     print(orange_cat_result)
-elif total_points <= 10:
+elif total_points <= 14:
     print(tabby_cat_result)
-elif total_points <= 15:
+elif total_points <= 21:
     print(calico_cat_result)
-elif total_points <= 19:
+elif total_points <= 28:
     print(tuxedo_cat_result)
-elif total_points <= 25:
+elif total_points <= 35:
     print(black_cat_result)
 else:
-    print("Error. Total number cannot be greater than 25.")
+    print("Error. Total number cannot be greater than 35.")
     
 input()
 
