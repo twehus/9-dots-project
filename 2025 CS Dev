@@ -1,1 +1,189 @@
 #Code In Place Breakout Game
+
+from graphics import Canvas
+import time
+import random
+import math
+
+
+CANVAS_WIDTH = 500
+CANVAS_HEIGHT = 600
+PADDLE_Y = CANVAS_HEIGHT - 30
+PADDLE_WIDTH = 80
+PADDLE_HEIGHT = 15
+BALL_RADIUS = 15
+
+INITIAL_VELOCITY = 5
+START_X = CANVAS_WIDTH / 2
+START_Y = 500
+DELAY = 0.001
+
+BRICK_GAP = 5
+BRICK_WIDTH = (CANVAS_WIDTH - BRICK_GAP*9) / 10
+BRICK_HEIGHT = 10
+BRICK_AMOUNT = 10
+
+#ideas to add: lives, try again button, make ball faster
+
+def main():
+    canvas = Canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
+    bricks(canvas, 'red', 9)
+    bricks(canvas, 'dark orange', 6.2)
+    bricks(canvas, 'gold', 4.7)
+    bricks(canvas, 'dark green', 3.77)
+    bricks(canvas, 'dark blue', 3.17)
+    score_total = 0
+    
+    
+    #paddle and mouse tracker
+    paddle = canvas.create_rectangle(
+        200, 525,
+        300, 
+        535,
+        'black'
+        )
+
+    #bouncing ball
+    x_velocity = INITIAL_VELOCITY
+    y_velocity = INITIAL_VELOCITY
+    ball_x = CANVAS_WIDTH / 2
+    ball_y = CANVAS_HEIGHT / 2.25
+    ball = canvas.create_oval(ball_x, ball_y,
+                        ball_x + BALL_RADIUS,
+                        ball_y + BALL_RADIUS,
+                        "black", "white") 
+
+    #out of bounds line
+    out_of_bounds = canvas.create_line(
+        0, CANVAS_HEIGHT - 1, 
+        CANVAS_WIDTH, CANVAS_HEIGHT - 1, 
+        "red"
+        )
+    
+    #keep track of points 
+    score = canvas.create_text(
+        10, 10,
+        text = "Score: ",
+        font = "Georgia",
+        font_size = 20,
+        color = "black"
+        )   
+    
+    #click to start text / action
+    start = canvas.create_text(
+        95, 210,
+        text = "Click anywhere to begin",
+        font = "Georgia",
+        font_size = 30,
+        color = "purple"
+        )
+    canvas.wait_for_click()
+    canvas.delete(start)
+  
+    #loop for movements
+    while True: #could change bc this runs forever but will need a condition to know when to stop
+    #what other way to do this?
+        
+        mouse_x = canvas.get_mouse_x()
+        mouse_y = canvas.get_mouse_y()
+        
+        #paddle movement    
+        new_x = mouse_x - PADDLE_WIDTH / 2
+        new_y = 525
+        canvas.moveto(paddle, new_x, new_y)
+        
+        #ball movement
+        if (ball_x < 0) or (ball_x + BALL_RADIUS >= CANVAS_WIDTH):
+            x_velocity = -x_velocity
+        if (ball_y < 0) or (ball_y + BALL_RADIUS >= CANVAS_HEIGHT):
+            y_velocity = -y_velocity
+        ball_x += x_velocity
+        ball_y += y_velocity
+        canvas.moveto(ball, ball_x, ball_y)
+        
+        time.sleep(DELAY)
+       
+    # collision loop
+        colliding_list = canvas.find_overlapping(ball_x, ball_y,
+                        ball_x + BALL_RADIUS,
+                        ball_y + BALL_RADIUS)
+        
+        for obj in colliding_list:
+            if obj == ball:
+                continue
+            elif obj == paddle:
+                # Bounce upward if it hits the paddle
+                y_velocity = -y_velocity ##what is -abs do
+                break
+                  # Only handle one object per frame
+            elif obj == out_of_bounds: #created new object for ball to identify
+                canvas.create_text(
+                    CANVAS_WIDTH / 4.3, 
+                    CANVAS_HEIGHT / 2.5, 
+                    text = 'TRY AGAIN',
+                    font = 'Georgia', 
+                    font_size = 50, 
+                    color ='black'
+                )
+                canvas.create_text(
+                    CANVAS_WIDTH/2 - 70, 
+                    CANVAS_HEIGHT / 2, 
+                    text = 'Score: ' + str(score_total),
+                    font = 'Georgia', 
+                    font_size = 40, 
+                    color ='blue'
+                )
+                print("Game over")
+                canvas.delete(ball)
+                canvas.delete(score)
+                return False #ends loop/restarts game when ball hits line
+            else:
+                canvas.delete(obj)  # Remove the brick
+                y_velocity = -y_velocity  # bounce
+                score_total += 1 
+                #change ball speed?
+                x_velocity += .25
+                y_velocity += .25
+                #updates text on canvas 
+                canvas.change_text(str(score), "Score: " + str(score_total))
+
+        #winning message
+        if score_total == 100:
+            canvas.clear()
+            canvas.create_text(
+                    155, 
+                    CANVAS_HEIGHT / 2.5, 
+                    text = 'YOU WIN!',
+                    font = 'Georgia', 
+                    font_size = 40, 
+                    color ='green'
+                )
+            canvas.create_text(
+                    70, 
+                    CANVAS_HEIGHT / 2, 
+                    text = 'Thanks for playing :)',
+                    font = 'Georgia', 
+                    font_size = 40, 
+                    color ='green'
+                )
+            return
+        
+                
+def bricks(canvas, color, height): #wooo proudest moment
+    for row in range(2):
+            bricks_in_row = BRICK_AMOUNT
+            total_width = bricks_in_row * (BRICK_WIDTH + 4.5)
+            start_x = (CANVAS_WIDTH - total_width)  
+            top_y = CANVAS_HEIGHT/height - (row + 1) * (BRICK_HEIGHT + BRICK_GAP)
+            bottom_y = top_y + BRICK_HEIGHT
+
+            for i in range(bricks_in_row):
+                left_x = start_x + i * (BRICK_WIDTH + BRICK_GAP)
+                right_x = left_x + (BRICK_WIDTH)
+                canvas.create_rectangle(left_x, top_y, right_x, bottom_y, color)
+
+  
+
+   
+if __name__ == '__main__':
+    main()
