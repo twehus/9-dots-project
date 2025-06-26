@@ -35,7 +35,7 @@ def main():
     score_total = 0
     
     
-    #paddle and mouse tracker
+    #paddle
     paddle = canvas.create_rectangle(
         200, 525,
         300, 
